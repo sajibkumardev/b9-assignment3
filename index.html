@@ -13,9 +13,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&display=swap"
         rel="stylesheet">
+        <!-- Tailwind customes classes -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'btn-primary': '#FF4240',
+                  }
+                }
+              }
+            }
+          </script>
+        <!-- customes css styles -->
     <style>
-        fonts-manrope{
+        fonts-manrope {
             font-family: 'Manrope', sans-serif;
+        }
+        .hr1{
+            border-top:1px dotted;
         }
     </style>
 
@@ -23,13 +40,13 @@
 
 <body>
     <header>
-        <section>
+        <section class="flex justify-center">
             <div class="carousel sm:w-[335px;] h-[200px;] lg:w-[1170px;] h-[550px;]">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="/Images/1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
@@ -46,22 +63,91 @@
                     <img src="/Images/3.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h3>Professional Hockeys Club</h3>
-                <p>The Hercules Ice Hockey Apparel sponsored Solway Sharks faced off against the Bristol 
+    </header>
+    <main>
+        <section class="py-[100px]">
+            <hr class="hr1">
+            <div class="text-center py-6">
+                <h3 class="text-3xl font-extrabold ">Professional Hockeys Club</h3>
+                <p class="lg:max-w-2xl mx-auto">The Hercules Ice Hockey Apparel sponsored Solway Sharks faced off against the Bristol
                     Pitbulls for the second time in two nights on Sunday afternoon.
                 </p>
             </div>
+            <hr class="hr1">
         </section>
-    </header>
-    <main>
-
+        <section class="lg:px-[100px]">
+            <div class="flex justify-evenly">
+                <div>
+                    <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+                    <h3 class="font-semibold">Prayer Facility</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+               <div>
+                <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+                <h3 class="font-semibold">Experienced Coach</h3>
+                <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+               </div>
+                <div>
+                    <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="font-semibold">Senior Player</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="font-semibold">Training Ground</h3>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
+        <section class="py-[100px]">
+            <hr class="hr1">
+            <div class="text-center py-6">
+                <h3 class="text-3xl font-extrabold">Program Sections</h3>
+                <p class="lg:max-w-2xl mx-auto">Program sections, or psects, are simply a section of code or data. They are a way of grouping together parts of a program</p>
+            </div>
+            <hr class="hr1">
+        </section>
+        <section>
+            <div class="flex ">
+                <div class="card w-96 bg-base-100 shadow-xl image-full">
+                    <figure><img src="/Images/2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Junior Program</h2>
+                      <p>USA Hockey's junior program provides opportunities for players ages 16-to-20</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn bg-btn-primary text-white">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-96 bg-base-100 shadow-xl image-full">
+                    <figure><img src="/Images/3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Teenager Program</h2>
+                      <p>Our Mission is to teach teamwork, discipline and leadership skills through sports. </p>
+                      <div class="card-actions justify-start">
+                        <button class="btn bg-btn-primary text-white">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div>
+                <div class="card w-[1170px] h-[450px] bg-base-100 shadow- image-full">
+                    <figure><img src="/Images/4.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Professional Program</h2>
+                      <p>The Young Professionals Program (YPP) is an entry-level recruitment program aimed</p>
+                      <div class="card-actions justify-start">
+                        <button class="btn bg-btn-primary text-white">Register Now!</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </main>
     <footer>
 
